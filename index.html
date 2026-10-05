@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#090b18">
+<title>VRickyVerse — Hub ufficiale</title>
+<meta name="description" content="VRickyVerse: musica, app, AI, anime, cinema e gaming in un unico universo creativo.">
+<style>
+:root{--bg:#080a16;--panel:rgba(19,24,54,.82);--line:rgba(255,255,255,.09);--text:#f7f8ff;--muted:#aeb6d8;--cyan:#62e7ff;--blue:#6578ff;--violet:#a86bff;--pink:#ff6fd7;--shadow:0 18px 60px rgba(0,0,0,.32)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;color:var(--text);font-family:ui-rounded,"SF Pro Rounded","SF Pro Display",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(850px 500px at 50% -10%,rgba(111,90,255,.27),transparent 60%),radial-gradient(500px 500px at 0 42%,rgba(76,220,255,.12),transparent 66%),radial-gradient(560px 560px at 100% 78%,rgba(255,84,205,.11),transparent 66%),linear-gradient(180deg,#090c1b 0%,#0c1126 56%,#080a16 100%);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:radial-gradient(circle at 20% 18%,rgba(255,255,255,.2) 0 1px,transparent 1.7px),radial-gradient(circle at 82% 15%,rgba(255,255,255,.15) 0 1px,transparent 1.7px),radial-gradient(circle at 73% 64%,rgba(255,255,255,.12) 0 1px,transparent 1.7px);background-size:190px 190px,260px 260px,310px 310px;opacity:.5}
+a{color:inherit;text-decoration:none}.shell{width:min(100%,620px);margin:0 auto;padding:24px 16px calc(34px + env(safe-area-inset-bottom));position:relative;z-index:1}
+.hero{text-align:center;padding:14px 0 18px}.brand-wrap{position:relative;display:inline-block;max-width:100%;padding:4px 10px 12px}.orbit{position:absolute;inset:-8px -10px 2px;border:2px solid transparent;border-top-color:rgba(99,230,255,.48);border-right-color:rgba(168,107,255,.32);border-radius:50%;transform:rotate(-8deg);filter:drop-shadow(0 0 12px rgba(99,230,255,.22));pointer-events:none}
+.brand{position:relative;margin:0;font-size:clamp(38px,11vw,64px);font-weight:1000;letter-spacing:-3px;line-height:.95;background:linear-gradient(90deg,#68eaff 0%,#6d84ff 26%,#bb76ff 55%,#ff7ed8 78%,#75e9ff 100%);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 10px 35px rgba(101,120,255,.18);filter:drop-shadow(0 2px 0 rgba(255,255,255,.12))}
+.brand:after{content:"✦";position:absolute;right:-4px;top:-12px;font-size:19px;color:#ffd46e;text-shadow:0 0 16px #ffcf5e}.tagline{margin:8px auto 0;color:#dce1ff;font-size:12.5px;letter-spacing:.35px}.intro{margin:13px auto 0;max-width:470px;color:var(--muted);font-size:14px;line-height:1.55}
+.section{margin-top:22px}.head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:0 2px 10px}.head h2{margin:0;font-size:17px}.head span{font-size:12px;color:var(--muted)}
+.social-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.social{display:flex;align-items:center;gap:11px;min-height:66px;padding:13px 14px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.035));box-shadow:var(--shadow);backdrop-filter:blur(16px);transition:.18s ease}.social:active{transform:scale(.985)}.ico{width:38px;height:38px;display:grid;place-items:center;flex:0 0 auto;border-radius:13px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.08);font-size:20px}.social b{font-size:14px;display:block}.social small{display:block;margin-top:2px;color:var(--muted);font-size:11.5px}
+.card{border:1px solid var(--line);border-radius:25px;background:linear-gradient(150deg,rgba(29,35,78,.92),rgba(14,18,45,.84));box-shadow:var(--shadow);overflow:hidden;position:relative}.card+.card{margin-top:12px}.app-card{padding:18px}.app-card:before{content:"";position:absolute;width:185px;height:185px;border-radius:50%;right:-72px;top:-78px;background:var(--orb,rgba(99,230,255,.16));filter:blur(2px)}.app-top{display:flex;align-items:center;gap:13px;position:relative}.app-icon{width:56px;height:56px;border-radius:18px;display:grid;place-items:center;font-size:28px;background:linear-gradient(145deg,rgba(255,255,255,.16),rgba(255,255,255,.06));border:1px solid rgba(255,255,255,.10)}.app-title{font-size:18px;font-weight:850}.app-sub{font-size:12.5px;color:var(--muted);margin-top:3px}.app-desc{position:relative;margin:14px 0 15px;color:#d7dcf7;font-size:13px;line-height:1.5}.actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;position:relative}.actions.one{grid-template-columns:1fr}.btn{display:flex;justify-content:center;align-items:center;min-height:44px;padding:10px 12px;border-radius:14px;font-size:13px;font-weight:780;border:1px solid rgba(255,255,255,.10);background:rgba(255,255,255,.065)}.btn.primary{background:linear-gradient(135deg,#5c7cff,#9d68ff);box-shadow:0 10px 24px rgba(103,96,255,.22)}
+.music{padding:16px}.music-row{display:grid;gap:9px}.music-link{display:flex;align-items:center;gap:12px;padding:12px 13px;border-radius:16px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.07)}.music-link .mark{width:28px;height:28px;border-radius:9px;display:grid;place-items:center;font-weight:900;background:rgba(255,255,255,.08)}.music-link strong{font-size:13.5px}.music-link span:last-child{margin-left:auto;color:#8991bd;font-size:18px}
+.share{margin-top:18px;display:flex;justify-content:center}.share button{appearance:none;border:1px solid var(--line);color:#e8ebff;background:rgba(255,255,255,.05);padding:11px 15px;border-radius:999px;font:inherit;font-size:12.5px;font-weight:750}.footer{text-align:center;color:#7680ad;font-size:11.5px;line-height:1.5;margin-top:23px;padding:5px 0}
+@media(min-width:520px){.social-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.shell{padding-left:20px;padding-right:20px}}
+@media(prefers-reduced-motion:no-preference){.brand-wrap{animation:float 6s ease-in-out infinite}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}}
+</style>
+</head>
+<body>
+<main class="shell">
+<header class="hero">
+  <div class="brand-wrap"><div class="orbit"></div><h1 class="brand">VRickyVerse</h1></div>
+  <div class="tagline">MUSICA • AI • APP • ANIME • CINEMA • GAMING</div>
+  <p class="intro">Un universo creativo tra musica, app, intelligenza artificiale e cultura nerd. Tutto in un solo posto.</p>
+</header>
+
+<section class="section">
+  <div class="head"><h2>Seguimi</h2><span>Tutti i social</span></div>
+  <div class="social-grid">
+    <a class="social" href="https://www.instagram.com/vrickyverse/" target="_blank" rel="noopener"><span class="ico">◎</span><span><b>Instagram</b><small>@vrickyverse</small></span></a>
+    <a class="social" href="https://www.tiktok.com/@vrickyverse" target="_blank" rel="noopener"><span class="ico">♪</span><span><b>TikTok</b><small>@vrickyverse</small></span></a>
+    <a class="social" href="https://facebook.com/VRickyVerse" target="_blank" rel="noopener"><span class="ico">f</span><span><b>Facebook</b><small>VRickyVerse</small></span></a>
+    <a class="social" href="https://www.threads.net/@vrickyverse" target="_blank" rel="noopener"><span class="ico">@</span><span><b>Threads</b><small>@VRickyVerse</small></span></a>
+    <a class="social" href="https://youtube.com/channel/UCHqPhG6fMev0rubegKkqoMA?si=tq9Zh8cJuu3ZDaxq" target="_blank" rel="noopener"><span class="ico">▶</span><span><b>YouTube</b><small>Video & musica</small></span></a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="head"><h2>Scopri</h2><span>App & progetti</span></div>
+  <article class="card app-card" style="--orb:rgba(255,165,63,.16)">
+    <div class="app-top"><div class="app-icon">🎬</div><div><div class="app-title">CineMood</div><div class="app-sub">Trova cosa guardare in base al tuo mood</div></div></div>
+    <p class="app-desc">Meno tempo a scegliere, più tempo a guardare. Disponibile sul web, su iPhone via browser e su Android.</p>
+    <div class="actions"><a class="btn primary" href="https://cine-mood.net" target="_blank" rel="noopener">Apri CineMood</a><a class="btn" href="https://play.google.com/store/apps/details?id=io.github.ricvali89_cpu.twa" target="_blank" rel="noopener">Google Play</a></div>
+  </article>
+  <article class="card app-card" style="--orb:rgba(112,91,255,.18)">
+    <div class="app-top"><div class="app-icon">🧩</div><div><div class="app-title">DuoPuzzle</div><div class="app-sub">Giochi, sfide e modalità online</div></div></div>
+    <p class="app-desc">Un contenitore di giochi da tavolo, puzzle e sfide pensate per partite veloci, anche da mobile.</p>
+    <div class="actions one"><a class="btn primary" href="https://duo-puzzle-privato.vercel.app" target="_blank" rel="noopener">Gioca a DuoPuzzle</a></div>
+  </article>
+</section>
+
+<section class="section">
+  <div class="head"><h2>Ascolta VRicky</h2><span>Musica</span></div>
+  <div class="card music">
+    <div class="music-row">
+      <a class="music-link" href="https://open.spotify.com/artist/4kflzB34MjKBmboJnNoPCe?si=ns4qR8VVRoSp_IAekKLQXg" target="_blank" rel="noopener"><span class="mark">S</span><strong>Spotify</strong><span>›</span></a>
+      <a class="music-link" href="https://music.apple.com/it/artist/vricky/1863349197" target="_blank" rel="noopener"><span class="mark">♪</span><strong>Apple Music</strong><span>›</span></a>
+      <a class="music-link" href="https://youtube.com/channel/UCHqPhG6fMev0rubegKkqoMA?si=tq9Zh8cJuu3ZDaxq" target="_blank" rel="noopener"><span class="mark">▶</span><strong>YouTube</strong><span>›</span></a>
+    </div>
+  </div>
+</section>
+
+<div class="share"><button id="shareBtn" type="button">↗ Condividi VRickyVerse</button></div>
+<footer class="footer">VRickyVerse<br>Musica • AI • App • Anime • Cinema • Gaming</footer>
+</main>
+<script>
+const b=document.getElementById('shareBtn');b.addEventListener('click',async()=>{const d={title:'VRickyVerse',text:'Scopri VRickyVerse',url:location.href};if(navigator.share){try{await navigator.share(d)}catch(e){}}else{try{await navigator.clipboard.writeText(location.href);b.textContent='✓ Link copiato';setTimeout(()=>b.textContent='↗ Condividi VRickyVerse',1800)}catch(e){}}});
+</script>
+</body>
+</html>
